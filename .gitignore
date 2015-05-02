@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+**/out
+.idea
+**/tmp
+**/temp
+**/bower_components
+**/node_modules
+**/css
+**/gen
+**/build
+**/vendor
