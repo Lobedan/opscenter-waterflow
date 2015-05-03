@@ -9,3 +9,5 @@
 **/gen
 **/build
 **/vendor
+_SpecRunner.html
+.grunt

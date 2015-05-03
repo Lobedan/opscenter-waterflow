@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogDataExport>
+    <name>log</name>
+    <exportTime>2015-05-02T16:29:12.8640284+02:00</exportTime>
+    <logdata>
+        <LogDataSet>
+            <t>2015-05-02T16:29:12.707</t>
+            <value>0</value>
+            <name>Aktuelle Alarmstufe</name>
+            <unit/>
+            <valueType>Number</valueType>
+            <device>aquaero</device>
+        </LogDataSet>
+    </logdata>
+</LogDataExport>

@@ -1,7 +1,7 @@
 /**
  * Created by svenklemmer on 01.05.15.
  */
-angular.module('opscenter.waterflow', ['ngRoute'])
+angular.module('opscenter.waterflow', ['ngRoute', 'xml.factory'])
 		.config(function ($routeProvider, $locationProvider) {
 			        $routeProvider
 					        .when('/', {

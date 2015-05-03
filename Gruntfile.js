@@ -16,7 +16,7 @@ module.exports = function (grunt) {
 			path = {
 				js: 'www/js/',
 				scss: 'www/scss/',
-				test: 'www/test/',
+				test: 'test/',
 				html: 'www/html/',
 				vendor: 'www/vendor/'
 			};
@@ -145,6 +145,7 @@ module.exports = function (grunt) {
 							specs: path.test + '/**/*.js',
 							vendor: [
 								/*'<%= meta.src.main.vendor %>/angular-scenario/angular-scenario.js'*/
+								path.vendor + 'jquery/jquery.min.js',
 								path.vendor + 'angular/angular.js',
 								path.vendor + 'angular-route/angular-route.js',
 								path.vendor + 'angular-mocks/angular-mocks.js'
@@ -258,7 +259,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('frontend:js:generate', ['ngAnnotate']);
 	grunt.registerTask('frontend:js:minify', ['uglify:js']);                                          // concat & uglify js
 	grunt.registerTask('frontend:js:compile', ['frontend:js:generate', 'frontend:js:minify']);        // js tasks for building
-	grunt.registerTask('frontend:js:test', ['frontend:vendor', 'jshint', 'jasmine']);
+	grunt.registerTask('frontend:js:test', ['jshint', 'jasmine']);
 	grunt.registerTask('frontend:js:watch', ['watch:js']);                                            // watch for changes in js files
 	//grunt.registerTask('frontend:js:test', ['bower:build', 'jshint', 'jasmine', 'protactor']);      // runs all js tests
 
